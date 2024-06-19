@@ -19,6 +19,15 @@ interface PhotoGridProps {
 }
 
 const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
+  const formatDate = (dateString: string | number | Date) => {
+    const options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    } as Intl.DateTimeFormatOptions;
+    return new Date(dateString).toLocaleDateString(undefined, options);
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
       {photos.map((photo) => (
@@ -37,8 +46,12 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
           </div>
           <div className="p-4 flex flex-col flex-grow">
             <h3 className="font-bold text-lg text-black">{photo.title}</h3>
-            <p className="text-gray-600">Author: {photo.author}</p>
-            <p className="text-gray-600">Date: {photo.date_taken}</p>
+            <p className="text-gray-600">
+              <strong>Author:</strong> {photo.author}
+            </p>
+            <p className="text-gray-600">
+              Date: {formatDate(photo.date_taken)}
+            </p>
             <p className="text-gray-600">Tags: {photo.tags}</p>
           </div>
         </div>
