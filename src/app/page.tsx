@@ -1,4 +1,5 @@
 "use client";
+import React, { useState, useEffect } from "react";
 import PhotoGrid from "@/components/PhotoGrid";
 
 interface Photo {
@@ -14,6 +15,28 @@ interface Photo {
 }
 
 export default function Home() {
+  const [photos, setPhotos] = useState<Photo[]>([]);
+  const [query, setQuery] = useState("");
+
+  useEffect(() => {
+    const fetchPhotos = async () => {
+      const response = await fetch("http://localhost:8000/api/photos");
+      const data = await response.json();
+      setPhotos(data.items);
+      console.log("Photos fetched:", data.items);
+    };
+    fetchPhotos();
+  }, []);
+
+  const handleSearch = async () => {
+    const response = await fetch(
+      `http://localhost:8000/api/photos?tags=${query}`
+    );
+    const data = await response.json();
+    setPhotos(data.items);
+    console.log("Photos fetched:", data.items);
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -32,23 +55,23 @@ export default function Home() {
             Flicker API and displays them in a grid.
           </p>
         </div>
-        {/* <div className="flex justify-center mb-4">
+        <div className="flex justify-center mb-4">
           <input
             type="text"
-            // value={query}
-            // onChange={(e) => setQuery(e.target.value)}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
             className="border p-2 rounded-l"
             placeholder="Search by tags..."
           />
           <button
-            // onClick={handleSearch}
+            onClick={handleSearch}
             className="bg-blue-500 text-white p-2 rounded-r"
           >
             Search
           </button>
-        </div> */}
+        </div>
         <div className="mt-8 lg:mt-0 lg:col-span-1">
-          <PhotoGrid initialPhotos={[]} />
+          <PhotoGrid photos={photos} />
         </div>
       </div>
     </main>

@@ -14,26 +14,24 @@ interface Photo {
 }
 
 interface PhotoGridProps {
-  initialPhotos: Photo[];
+  photos: Photo[];
 }
 
-const PhotoGrid: React.FC<PhotoGridProps> = ({ initialPhotos }) => {
-  const [photos, setPhotos] = useState<Photo[]>(initialPhotos);
-
-  useEffect(() => {
-    // Fetch photos on component mount if initialPhotos is empty
-    if (initialPhotos.length === 0) {
-      fetch("http://localhost:8000/api/photos")
-        .then((response) => response.json())
-        .then((data) => {
-          setPhotos(data.items);
-          console.log("Photos fetched:", data.items);
-        })
-        .catch((error) => {
-          console.error("Error fetching photos:", error);
-        });
-    }
-  }, [initialPhotos]);
+const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
+  //   useEffect(() => {
+  //     // Fetch photos on component mount if initialPhotos is empty
+  //     if (initialPhotos.length === 0) {
+  //       fetch("http://localhost:8000/api/photos")
+  //         .then((response) => response.json())
+  //         .then((data) => {
+  //           setPhotos(data.items);
+  //           console.log("Photos fetched:", data.items);
+  //         })
+  //         .catch((error) => {
+  //           console.error("Error fetching photos:", error);
+  //         });
+  //     }
+  //   }, [initialPhotos]);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
