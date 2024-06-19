@@ -20,7 +20,9 @@ export default function Home() {
 
   useEffect(() => {
     const fetchPhotos = async () => {
-      const response = await fetch("http://localhost:8000/api/photos");
+      const response = await fetch(
+        "https://mysterious-shelf-66312-061caa01dc2c.herokuapp.com/api/photos"
+      );
       const data = await response.json();
       setPhotos(data.items);
       console.log("Photos fetched:", data.items);
@@ -30,7 +32,7 @@ export default function Home() {
 
   const handleSearch = async () => {
     const response = await fetch(
-      `http://localhost:8000/api/photos?tags=${query}`
+      `https://mysterious-shelf-66312-061caa01dc2c.herokuapp.com/api/photos?tags=${query}`
     );
     const data = await response.json();
     setPhotos(data.items);
