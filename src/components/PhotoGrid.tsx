@@ -23,10 +23,16 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
       {photos.map((photo) => (
         <div
           key={photo.link}
-          className="bg-white shadow rounded overflow-hidden"
+          className="bg-white shadow rounded overflow-hidden flex flex-col"
         >
-          <img src={photo.media.m} alt={photo.title} className="w-full" />
-          <div className="p-4">
+          <div className="h-64 overflow-hidden flex-shrink-0">
+            <img
+              src={photo.media.m}
+              alt={photo.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 flex flex-col flex-grow">
             <h3 className="font-bold text-lg text-black">{photo.title}</h3>
             <p className="text-gray-600">{photo.author}</p>
           </div>
