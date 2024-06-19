@@ -34,7 +34,9 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
           </div>
           <div className="p-4 flex flex-col flex-grow">
             <h3 className="font-bold text-lg text-black">{photo.title}</h3>
-            <p className="text-gray-600">{photo.author}</p>
+            <p className="text-gray-600">Author: {photo.author}</p>
+            <p className="text-gray-600">Date: {photo.date_taken}</p>
+            <p className="text-gray-600">Tags: {photo.tags}</p>
           </div>
         </div>
       ))}
