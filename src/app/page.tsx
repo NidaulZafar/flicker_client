@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
+    <main className="flex min-h-screen flex-col items-center p-4 md:p-8">
       <div className="mb-32 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <div className="lg:col-span-3">
           <h1 className="text-3xl font-bold text-center lg:text-left lg:text-5xl">
