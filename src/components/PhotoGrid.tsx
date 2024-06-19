@@ -1,5 +1,6 @@
 // frontend/components/PhotoGrid.tsx
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface Photo {
   title: string;
@@ -25,10 +26,12 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
           key={photo.link}
           className="bg-white shadow rounded overflow-hidden flex flex-col"
         >
-          <div className="h-64 overflow-hidden flex-shrink-0">
-            <img
+          <div className="relative h-64 overflow-hidden flex-shrink-0">
+            <Image
               src={photo.media.m}
               alt={photo.title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="w-full h-full object-cover"
             />
           </div>
