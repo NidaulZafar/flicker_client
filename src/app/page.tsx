@@ -60,7 +60,7 @@ export default function Home() {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="border p-2 rounded-l"
+            className="border p-2 rounded-l text-white w-full md:w-1/2 lg:w-1/3 bg-black/10"
             placeholder="Search by tags..."
           />
           <button
