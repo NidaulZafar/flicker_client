@@ -49,9 +49,11 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
               <strong>Author:</strong> {photo.author}
             </p>
             <p className="text-gray-600">
-              Date: {formatDate(photo.date_taken)}
+              <strong>Date:</strong> {formatDate(photo.date_taken)}
             </p>
-            <p className="text-gray-600">Tags: {photo.tags}</p>
+            <p className="text-gray-600">
+              <strong>Tags:</strong> {photo.tags || "No Tags Listed"}
+            </p>
           </div>
         </div>
       ))}
