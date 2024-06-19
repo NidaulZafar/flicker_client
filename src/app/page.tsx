@@ -1,6 +1,5 @@
 "use client";
 import PhotoGrid from "@/components/PhotoGrid";
-import Image from "next/image";
 
 interface Photo {
   title: string;
