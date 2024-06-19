@@ -1,5 +1,6 @@
 // frontend/components/PhotoGrid.tsx
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface Photo {
   title: string;
@@ -23,12 +24,22 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
       {photos.map((photo) => (
         <div
           key={photo.link}
-          className="bg-white shadow rounded overflow-hidden"
+          className="bg-white shadow rounded overflow-hidden flex flex-col"
         >
-          <img src={photo.media.m} alt={photo.title} className="w-full" />
-          <div className="p-4">
-            <h3 className="font-bold text-lg">{photo.title}</h3>
-            <p className="text-gray-600">{photo.author}</p>
+          <div className="relative h-64 overflow-hidden flex-shrink-0">
+            <Image
+              src={photo.media.m}
+              alt={photo.title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 flex flex-col flex-grow">
+            <h3 className="font-bold text-lg text-black">{photo.title}</h3>
+            <p className="text-gray-600">Author: {photo.author}</p>
+            <p className="text-gray-600">Date: {photo.date_taken}</p>
+            <p className="text-gray-600">Tags: {photo.tags}</p>
           </div>
         </div>
       ))}
