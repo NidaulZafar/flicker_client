@@ -37,7 +37,6 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ initialPhotos }) => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-      <h1>see photos</h1>
       {photos.map((photo) => (
         <div
           key={photo.link}

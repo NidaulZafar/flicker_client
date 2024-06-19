@@ -22,7 +22,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+      <div className="mb-32 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <div className="lg:col-span-3">
           <h1 className="text-3xl font-bold text-center lg:text-left lg:text-5xl">
             Welcome to the Flicker feed viewer
