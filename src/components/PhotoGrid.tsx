@@ -27,7 +27,7 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
         >
           <img src={photo.media.m} alt={photo.title} className="w-full" />
           <div className="p-4">
-            <h3 className="font-bold text-lg">{photo.title}</h3>
+            <h3 className="font-bold text-lg text-black">{photo.title}</h3>
             <p className="text-gray-600">{photo.author}</p>
           </div>
         </div>
