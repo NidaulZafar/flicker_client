@@ -1,4 +1,18 @@
+"use client";
+import PhotoGrid from "@/components/PhotoGrid";
 import Image from "next/image";
+
+interface Photo {
+  title: string;
+  link: string;
+  media: { m: string };
+  date_taken: string;
+  description: string;
+  published: string;
+  author: string;
+  author_id: string;
+  tags: string;
+}
 
 export default function Home() {
   return (
@@ -34,7 +48,9 @@ export default function Home() {
             Search
           </button>
         </div> */}
-        <div className="mt-8 lg:mt-0 lg:col-span-1"></div>
+        <div className="mt-8 lg:mt-0 lg:col-span-1">
+          <PhotoGrid initialPhotos={[]} />
+        </div>
       </div>
     </main>
   );
