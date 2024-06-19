@@ -18,13 +18,13 @@ interface PhotoGridProps {
 }
 
 const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
-  const formatDate = (dateString: string | number | Date) => {
+  const formatDate = (date: string | number | Date) => {
     const options = {
       year: "numeric",
       month: "long",
       day: "numeric",
     } as Intl.DateTimeFormatOptions;
-    return new Date(dateString).toLocaleDateString(undefined, options);
+    return new Date(date).toLocaleDateString(undefined, options);
   };
 
   return (
