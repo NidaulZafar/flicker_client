@@ -36,8 +36,8 @@ export default function Home() {
             Welcome to the Flickr feed viewer
           </h1>
           <p className="mt-4 text-lg text-center lg:text-left lg:text-xl">
-            This is a simple web application that fetches photos from the Flickr
-            API and displays them in a grid.
+            This web application fetches photos from the Flickr API and displays
+            them in a grid. You can also search for photos by tags. Enjoy!
           </p>
         </div>
         <div className="flex justify-center mb-4">
