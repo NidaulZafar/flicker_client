@@ -33,7 +33,7 @@ export default function Home() {
       <div className="mb-32 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <div className="lg:col-span-3">
           <h1 className="text-3xl font-bold text-center lg:text-left lg:text-5xl">
-            Welcome to the Flicker feed viewer
+            Welcome to the Flickr feed viewer
           </h1>
           <p className="mt-4 text-lg text-center lg:text-left lg:text-xl">
             This is a simple web application that fetches photos from the
