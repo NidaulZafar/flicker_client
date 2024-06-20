@@ -32,7 +32,7 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
             />
           </div>
-          <div className="p-4 flex flex-col flex-grow">
+          <div className="p-4 flex flex-col flex-grow bg-slate-300">
             <h3 className="font-bold text-lg text-black">{photo.title}</h3>
             <p className="text-gray-600">
               <strong>Author:</strong> {photo.author}
