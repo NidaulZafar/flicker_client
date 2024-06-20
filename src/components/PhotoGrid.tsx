@@ -32,7 +32,7 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
       {photos.map((photo) => (
         <div
           key={photo.link}
-          className="bg-white shadow rounded overflow-hidden flex flex-col"
+          className="bg-white shadow rounded overflow-hidden flex flex-col transform transition-transform duration-300 hover:scale-105 hover:rotate-1"
         >
           <div className="relative h-64 overflow-hidden flex-shrink-0">
             <Image
@@ -40,7 +40,7 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
               alt={photo.title}
               fill
               sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
             />
           </div>
           <div className="p-4 flex flex-col flex-grow">
