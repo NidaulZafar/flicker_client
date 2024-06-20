@@ -1,18 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import PhotoGrid from "@/components/PhotoGrid";
-
-interface Photo {
-  title: string;
-  link: string;
-  media: { m: string };
-  date_taken: string;
-  description: string;
-  published: string;
-  author: string;
-  author_id: string;
-  tags: string;
-}
+import { Photo } from "@/components/Photo";
 
 export default function Home() {
   const [photos, setPhotos] = useState<Photo[]>([]);

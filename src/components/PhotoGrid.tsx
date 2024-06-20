@@ -1,17 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
-interface Photo {
-  title: string;
-  link: string;
-  media: { m: string };
-  date_taken: string;
-  description: string;
-  published: string;
-  author: string;
-  author_id: string;
-  tags: string;
-}
+import { Photo } from "./Photo";
 
 interface PhotoGridProps {
   photos: Photo[];
