@@ -14,7 +14,6 @@ export default function Home() {
       );
       const data = await response.json();
       setPhotos(data.items);
-      console.log("Photos fetched:", data.items);
     };
     fetchPhotos();
   }, []);
@@ -25,7 +24,6 @@ export default function Home() {
     );
     const data = await response.json();
     setPhotos(data.items);
-    console.log("Photos fetched:", data.items);
   };
 
   return (
