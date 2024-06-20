@@ -20,19 +20,13 @@ The challenge involves creating a web application that fetches and displays imag
 
 The app is built using:
 
-<img src="https://img.shields.io/badge/-Next.js-999999?logo=next.js" height="30" alt="Next.js">
-<img src="https://img.shields.io/badge/-Typescript-ADD8E6?logo=typescript" height="30" alt="TypeScript">
-<img src="https://img.shields.io/badge/-NodeJs-ffffff?logo=nodedotjs" height="30" alt="Nodejs">
-<img src="https://img.shields.io/badge/-Git-568268?logo=git" height="30" alt="Git">
-<img src="https://img.shields.io/badge/-Express.js-234523?logo=express" height="30" alt="Express.js">
-<img src="https://img.shields.io/badge/-Tailwind-846547?logo=tailwindcss" height="30" alt="tailwind css">
+<img src="https://img.shields.io/badge/-Next.js-999999?logo=next.js" height="30" alt="Next.js"> <img src="https://img.shields.io/badge/-Typescript-ADD8E6?logo=typescript" height="30" alt="TypeScript"> <img src="https://img.shields.io/badge/-NodeJs-ffffff?logo=nodedotjs" height="30" alt="Nodejs"> <img src="https://img.shields.io/badge/-Git-568268?logo=git" height="30" alt="Git"> <img src="https://img.shields.io/badge/-Express.js-234523?logo=express" height="30" alt="Express.js"> <img src="https://img.shields.io/badge/-Tailwind-846547?logo=tailwindcss" height="30" alt="tailwind css">
 
 ## Deployment
 
 The application has been deployed separately and can be accessed at the following links for [backend](https://mysterious-shelf-66312-061caa01dc2c.herokuapp.com/) and [frontend](https://flicker-client-ruddy.vercel.app/) respectively:
 
-<img src="https://img.shields.io/badge/-Heroku-563674?logo=heroku" height="30" alt="Heroku">
-<img src="https://img.shields.io/badge/-Vercel-000000?logo=vercel" height="30" alt="Heroku">
+<img src="https://img.shields.io/badge/-Heroku-563674?logo=heroku" height="30" alt="Heroku"> <img src="https://img.shields.io/badge/-Vercel-000000?logo=vercel" height="30" alt="Heroku">
 
 ## To Contact Me
 
