@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Miyagami Full Stack JavaScript Coding Challenge
 
-## Getting Started
+<br />
+<div align="center">
+  <a href="#">
+    <img src="https://raw.githubusercontent.com/NidaulZafar/nida-zafar/master/src/app/favicon.ico" alt="Logo" width="200" height="200">
+  </a>
+  </div>
 
-First, run the development server:
+## About the Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This repository contains my solution for the Full Stack JavaScript coding challenge at Miyagami. The live deployment on vercel can be accessed [here](https://flicker-client-ruddy.vercel.app/).
+The backend server using express.js is hosted in a separate [backend](https://github.com/NidaulZafar/nida-zafar-server) repo.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The challenge involves creating a web application that fetches and displays images from [Flickr's](http://www.flickr.com/services/feeds/) public feeds. It also allows users to search for images by tags.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Built with
 
-## Learn More
+The app is built using:
 
-To learn more about Next.js, take a look at the following resources:
+<img src="https://img.shields.io/badge/-Next.js-999999?logo=next.js" height="30" alt="Next.js">
+<img src="https://img.shields.io/badge/-Typescript-ADD8E6?logo=typescript" height="30" alt="TypeScript">
+<img src="https://img.shields.io/badge/-NodeJs-ffffff?logo=nodedotjs" height="30" alt="Nodejs">
+<img src="https://img.shields.io/badge/-Git-568268?logo=git" height="30" alt="Git">
+<img src="https://img.shields.io/badge/-Express.js-234523?logo=express" height="30" alt="Express.js">
+<img src="https://img.shields.io/badge/-Tailwind-846547?logo=tailwindcss" height="30" alt="tailwind css">
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The application has been deployed separately and can be accessed at the following links for [backend](https://mysterious-shelf-66312-061caa01dc2c.herokuapp.com/) and [frontend](https://flicker-client-ruddy.vercel.app/) respectively:
 
-## Deploy on Vercel
+<img src="https://img.shields.io/badge/-Heroku-563674?logo=heroku" height="30" alt="Heroku">
+<img src="https://img.shields.io/badge/-Vercel-000000?logo=vercel" height="30" alt="Heroku">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## To Contact Me
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Nida ul Zafar <br>
+
+[<img src="https://img.shields.io/badge/-Gmail-fff?logo=gmail" height="30" alt="Gmail">](mailto:nidaulzafar@gmail.com)
+[<img src="https://img.shields.io/badge/-github-000?logo=github" height="30" alt="Github">](https://github.com/nidaulzafar)
