@@ -35,7 +35,9 @@ export default function Home() {
           </h1>
           <p className="mt-4 text-lg text-center lg:text-left lg:text-xl">
             This web application fetches photos from the Flickr API and displays
-            them in a grid. You can also search for photos by tags. Enjoy!
+            them in a grid. You can also search for photos by tags. Enjoy! P.S:
+            It may take a few seconds to load the photos depending on the API
+            server response.
           </p>
         </div>
         <div className="flex justify-center mb-4">
